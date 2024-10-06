@@ -23,7 +23,7 @@ function App() {
       <iframe
         src="https://chatbot-3.vercel.app/"
         width="100%"
-        height="700px"
+        height="600px"
      frameborder="0"
       ></iframe>
       <FullPageCarousel/>
