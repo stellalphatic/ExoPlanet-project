@@ -20,6 +20,12 @@ function App() {
       <Cards />
       <ExoplanetExplorer/>
       {/* <Carousel /> */}
+      <iframe
+        src="https://chatbot-3.vercel.app/"
+        width="100%"
+        height="700px"
+     frameborder="0"
+      ></iframe>
       <FullPageCarousel/>
 
     </div>
