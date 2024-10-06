@@ -1,0 +1,76 @@
+.exoplanet-carousel {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    background: #f4f4f4;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .exoplanet-carousel__content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .exoplanet-carousel__image {
+    flex: 1;
+  }
+  
+  .exoplanet-carousel__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .exoplanet-carousel__details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .exoplanet-carousel__details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .exoplanet-carousel__details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .possibility-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+  }
+  
+  .possibility-bar__fill {
+    height: 20px;
+    background: #4caf50;
+    border-radius: 5px;
+  }
+  
+  .carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+  }
+  
+  .carousel__button.prev {
+    left: 10px;
+  }
+  
+  .carousel__button.next {
+    right: 10px;
+  }
+  
