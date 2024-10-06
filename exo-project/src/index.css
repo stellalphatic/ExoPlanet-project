@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/nasa-Q1p7bh3SHj8-unsplash.jpg);
+  }
+ 
+  header {
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+
+  }
+  
+  header h1 {
+    font-size: 30px;
+    border: 2px solid rgba(6, 78, 78, 0.251);
+    background: rgba(4, 93, 93, 0.479);
+    cursor: pointer;
+  }
+  
+  header nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 18px;
+  }
+  .HeaderItem:hover
+   {
+        color: rgba(21, 205, 205, 0.846);
+        text-decoration: 4px aqua underline;
+        padding: 3px;
+        transform: translate(3px, 3px);
+    }
+  
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero video{
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .hero h2 {
+    font-size: 60px ;
+    top: 40%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+  }
+  .hero h2::before {
+    content: "Discover the Wonders of Exoplanets";
+    position: absolute;
+    color: black;
+    top: -3px;
+    left: -3px;
+    -webkit-text-stroke: 2px rgb(0, 208, 255);
+    /* z-index: -1; */
+}
+  
+  .search-bar {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+
+  .featured-exoplanets {
+    margin: 20px;
+  }
+  
+  .featured-exoplanet {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about {
+    margin: 20px;
+  }
+  
+  .habitability-bar {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  .habitability-bar__fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .habitability-bar__label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #333;
+  }
+
+  #cards-container {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.card {
+    height: 90%;
+    width: 24%;
+    border-radius: 10px;
+    background-color: blue;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.5s;
+    box-shadow: 10px 10px 8px rgb(9, 118, 154);
+}
+
+#card1 {
+    background-image: url('https://images.unsplash.com/photo-1590388143860-6594f1fbc1f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHBsYW5ldHxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+#card2 {
+    background-image: url('https://images.unsplash.com/photo-1545156521-77bd85671d30?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+#card3 {
+    background-image: url('https://images.unsplash.com/photo-1632395627760-72e6eca7f9c7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBsYW5ldHxlbnwwfHwwfHx8MA%3D%3D');
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-justify: center;
+    padding: 50px;
+    padding-top: 90px;
+    background: rgba(30, 140, 187, 0.882);
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+
+.overlay h3 {
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.overlay p {
+    color: #000;
+    font-weight: 700;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.card:hover {
+    /* transform: rotate3d(-1, 1, 0, 18deg); */
+    transform: translate(10px, 10px);
+    box-shadow: none;
+}
